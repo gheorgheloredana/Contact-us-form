@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema curs 5 partea 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 600px;
+            display: grid;
+            row-gap: 30px;
+            background-color: #77b3d4;
+            padding: 40px;
+            border: 1px solid #77b3d4;
+            border-radius: 10px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form input[type="text"] {
+            padding: 10px;
+            border-radious: 4px;
+            border: 1px solid #ccc;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        form select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: rgb(80, 80, 80);
+        }
+
+        form input[type="submit"] {
+            color: white;
+            background-color: #395dff;
+            border: 1px solid #395dff;
+            padding: 10px 15px;
+            border-radius: 4px;
+            width: 100px;
+            transition: background-color 0.1s;
+        }
+
+        form input:hover {
+            border: 1px solid #012fff;
+            transition: border 0.1s;
+        }
+
+        #contactus {
+            font-size: 45px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        img {
+            float: left;
+        }
+
+        div {
+            margin: auto;
+            width: 400px;
+            display: block;
+            font-weight: 600;
+            color: rgb(36, 36, 36);
+        }
+
+        textarea:hover {
+            border: 1px solid #012fff;
+            transition: border 0.1s;
+        }
+
+        #message {
+            margin-top: 0px;
+            overflow: scroll;
+        }
+
+        #yourmessage {
+            margin: 0px 0px;
+            font-size: 13px;
+            color: rgb(80, 80, 80);
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #1942fa;
+            border: 1px solid #1942fa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <img src="Circle-icons-mail.svg.png" width="50 px" height="50 px" alt="mail icon">
+        <p id="contactus">Contact us</p>
+    </div>
+
+    <form class="rand-formular">
+        <input type="text" name="Nume" placeholder="Name.." required>
+        <input type="text" name="email" placeholder="Email" required>
+        <p id="yourmessage">Your message</p>
+        <textarea id="message" name="message" rows="5" cols="69"></textarea required>
+    <input type="submit">
+</form>
+
+    </body>
+</html>
