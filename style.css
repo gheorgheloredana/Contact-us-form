@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contactus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    font-weight: 600;
+    color: rgb(36, 36, 36);
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    max-width: 800px;
+    display: grid;
+    row-gap: 30px;
+    background-color: #77b3d4;
+    padding: 40px;
+    border: 1px solid #77b3d4;
+    border-radius: 10px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 4px;
+}
+
+form select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: rgb(80, 80, 80);
+}
+
+form input[type="submit"] {
+    color: white;
+    background-color: #395dff;
+    border: 1px solid #395dff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 100px;
+    transition: background-color 0.1s;
+}
+
+form input:hover {
+    border: 1px solid #012fff;
+    transition: border 0.1s;
+}
+
+#contactus {
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+img {
+    float: left;
+    max-width: 200px;
+}
+
+textarea:hover {
+    border: 1px solid #012fff;
+    transition: border 0.1s;
+}
+
+#message {
+    margin-top: 0px;
+    overflow: scroll;
+}
+
+#yourmessage {
+    margin: 0px 0px;
+    font-size: 13px;
+    color: rgb(80, 80, 80);
+}
+
+form input[type="submit"]:hover {
+    background-color: #1942fa;
+    border: 1px solid #1942fa;
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+
+    #contactus {
+        font-size: 35px;  
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 769px) {
+
+    #contactus {
+        font-size: 30px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #contactus {
+        font-size: 25px; 
+        margin-left: 0;
+    }
+
+    .contactus{
+        flex-direction: column;
+    }
+}
+
